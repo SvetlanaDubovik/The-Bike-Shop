@@ -1,0 +1,45 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+
+.slider {
+  position: relative;
+  opacity: rgba(0, 0, 0, 0.7);
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.slider__background {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.slider__background_philter {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.slider__arrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 460px;
+}
+
+.slider__arrow_left {
+  left: 26px;
+} 
+
+.slider__arrow_leftActive {
+  background: url("../../dist/img/arrow-left-active.png") no-repeat;
+}
+
+.slider__arrow_right {
+  right: 26px;
+  background: url("../../dist/img/arrow-right.png") no-repeat;
+}
+

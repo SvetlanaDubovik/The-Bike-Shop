@@ -1,0 +1,13 @@
+@import "./_variables"; 
+@import "./global/fonts"; 
+
+
+@mixin btn($sidePadding: 30px, $backgroundClr: $black, $textClr: $yellow) {
+  background-color: $backgroundClr;
+  color: $textClr;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px $sidePadding;
+  font-size: 12px;
+  font-family: RobotoThin;
+}

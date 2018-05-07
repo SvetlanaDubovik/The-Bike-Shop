@@ -5,12 +5,16 @@
 
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 20%;
   width: $desktop-central-content-width;
   margin: 0 auto;
   height: 40px;
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .header-logo {

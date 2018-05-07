@@ -22,7 +22,7 @@ module.exports = function (env){
         ],
       },
         
-      devtool: 'source-map',
+//      devtool: 'source-map',
 
       output: {
         filename: production ? 'js/[name].min.js' : 'js/[name].js',

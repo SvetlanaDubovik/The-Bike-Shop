@@ -85,4 +85,3 @@ module.exports = __webpack_require__(2);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map
