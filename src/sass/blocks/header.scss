@@ -1,0 +1,29 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+@import "../global/grid"; 
+
+
+.header {
+  width: $desktop-central-content-width;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  position: relative;
+  margin-left: 12px;
+  
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 166px;
+    height: 57px;
+  }
+  
+}

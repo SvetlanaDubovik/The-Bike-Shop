@@ -1,0 +1,48 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+@import "../global/grid"; 
+
+.nav-menu__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+
+.nav-menu__item {
+  position: relative;
+  padding: 10px;
+  
+  a {
+    color: #fff;
+    padding: 10px 10px 10px;
+  }
+  
+}
+
+.nav-menu__item_sub a {
+  padding-bottom: 30px;
+}
+
+.nav-menu__item_bascket {
+  padding-top: 5px; 
+}
+
+.nav-menu__item:hover {  
+  
+  .nav-menu__sub {
+    display: block;
+  }
+  
+}
+
+.nav-menu__item:hover >  a {
+  color: $black;
+  background-color: $yellow;
+  border-radius: 10px;       
+}
+
+.nav-menu__item_bascket:hover > a {
+  background-color: transparent;
+}

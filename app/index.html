@@ -2,21 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Webpack Test Page</title>
-  <link rel="stylesheet" href="../dist/css/app.css">
+  <title>The Bike Shop</title>
+  <link rel="stylesheet" href="../dist/css/main.css">
+  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
 </head>
 <body>
-
-<h1>Webpak page</h1>
-<!--
-<div class="home"></div>
-
-<img src="../dist/img/card-back.jpg" alt="">
--->
-
-<div class="bicycling"></div>
- 
- <script src="../dist/js/app.js"></script>
-  
+  <header class="header">
+    <div class="header-logo">
+      <img src="../dist/img/header-logo.png" alt="The Bikes Shop" height="57" width="166">
+    </div>
+    <div class="nav-menu_header">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item nav-menu__item_sub">
+          <a href="#">Bicycles</a>
+          <ul class="nav-menu__sub sub-menu">
+            <li class="sub-menu__item">
+              <a href="#">Fixed / Single speed</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#">City bikes</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#">Premium series</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#">Parts</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#">Accessories</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#">Extras</a>
+        </li>
+        <li class="nav-menu__item nav-menu__item_bascket">
+          <a href="#"><img src="../dist/img/bascket.png" alt="bascket-img" width="26" height="26"></a>
+        </li>
+      </ul>
+    </div>
+  </header> 
+  <section class="slider"></section>
+  <section class="categories"></section>
+  <section class="popular-bikes"></section>
+  <section class="contact-us"></section>
+  <footer></footer>  
+<!--  <script src="../dist/js/main.js"></script>-->
 </body>
 </html>
