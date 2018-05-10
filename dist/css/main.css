@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'RobotoBold';
   src: url(../fonts/Roboto-Bold.ttf);
@@ -417,6 +418,14 @@ a {
   font-weight: 100;
   font-style: normal; }
 
+@keyframes pulseScroll {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .slider {
   position: relative;
   opacity: rgba(0, 0, 0, 0.7);
@@ -439,17 +448,65 @@ a {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 460px; }
+  top: 460px;
+  border: none;
+  cursor: pointer; }
 
 .slider__arrow_left {
   left: 26px; }
 
+/*нужно еще для левой  стрелки неактивное состояние и для правой активное*/
+/*разобраться с урлом*/
 .slider__arrow_leftActive {
   background: url(../_/dist/img/arrow-left-active.png) no-repeat; }
 
 .slider__arrow_right {
   right: 26px;
   background: url(../_/dist/img/arrow-right.png) no-repeat; }
+
+.slider__scroll {
+  display: block;
+  position: absolute;
+  top: 860px;
+  left: 50%;
+  margin-left: -40px;
+  width: 88px;
+  height: 95px;
+  background: url(../_/dist/img/scroll-icon.png);
+  z-index: 2; }
+
+.slider__scroll:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  width: 88px;
+  height: 42px;
+  background: url(../_/dist/img/scroll-icon-active.png);
+  z-index: 3;
+  animation: pulseScroll 3s linear  infinite; }
+
+.slider-nav {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  z-index: 3; }
+
+.slider-nav__item {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  border-bottom: 1px solid #d2cece; }
+
+.slider-nav__item_active {
+  border-bottom: 3px solid #fcff19; }
 
 @font-face {
   font-family: 'RobotoBold';
@@ -514,7 +571,8 @@ a {
 .slider-header {
   position: absolute;
   top: 380px;
-  left: 36%;
+  left: 50%;
+  margin-left: -270px;
   z-index: 100;
   width: 540px;
   text-align: center;

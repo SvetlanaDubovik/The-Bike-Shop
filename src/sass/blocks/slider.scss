@@ -2,6 +2,12 @@
 @import "../_mixins"; 
 @import "../global/fonts"; 
 
+@keyframes pulseScroll {
+  from {opacity: 1;}
+  50% {opacity: 0}
+  to {opacity: 1;}
+}
+
 .slider {
   position: relative;
   opacity: rgba(0, 0, 0, 0.7);
@@ -28,11 +34,16 @@
   width: 60px;
   height: 60px;
   top: 460px;
+  border: none;
+  cursor: pointer;
 }
 
 .slider__arrow_left {
   left: 26px;
 } 
+/*нужно еще для левой  стрелки неактивное состояние и для правой активное*/
+
+/*разобраться с урлом*/
 
 .slider__arrow_leftActive {
   background: url("../../dist/img/arrow-left-active.png") no-repeat;
@@ -42,4 +53,53 @@
   right: 26px;
   background: url("../../dist/img/arrow-right.png") no-repeat;
 }
+
+.slider__scroll {
+  display: block;
+  position: absolute;
+  top: 860px;
+  left: 50%;
+  margin-left: -40px;
+  width: 88px;
+  height: 95px;
+  background: url("../../dist/img/scroll-icon.png");
+  z-index: 2;
+}
+
+.slider__scroll:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  width: 88px;
+  height: 42px;
+  background: url("../../dist/img/scroll-icon-active.png");
+  z-index: 3;
+  animation:  pulseScroll 3s linear  infinite;
+}
+
+.slider-nav {
+//  margin: -5px 0 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+//  height: 4px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  z-index: 3;
+}
+
+.slider-nav__item {
+  flex-basis: 20%;
+  border-bottom: 1px solid $gray;
+}
+
+.slider-nav__item_active {
+  border-bottom: 3px solid $yellow;
+}
+
+
 
