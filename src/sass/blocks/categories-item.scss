@@ -1,0 +1,55 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+
+.categories-item {
+  display: block;
+  width: 346px;
+  height: 288px;
+  margin: 15px;
+}
+
+.categories-item_1 {
+  background: url(../../dist/img/categories-photo1.jpg);
+}
+
+.categories-item_2 {
+  position: relative;
+  background: url(../../dist/img/categories-photo2.jpg);
+}
+
+.categories-item_2::after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../dist/img/categories-photo-philter.png);
+}
+
+.categories-item_3 {
+  background: url(../../dist/img/categories-photo3.jpg);
+}
+
+.categories-item__info {
+  color: $white;
+  text-align: center;
+  text-transform: none;
+  font-size: 16px;
+  font-family: RobotoLight;
+  margin: 0;
+}
+
+.categories-item_to-store {
+  color: $white;
+  text-align: center;
+  border: 1px solid $white;
+  border-radius: 10px;
+  padding: 12px;
+  width: 92px;
+  margin: 28px auto;
+  display: block;
+  font-size: 12px;
+}
