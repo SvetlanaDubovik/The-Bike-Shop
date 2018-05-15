@@ -16,7 +16,7 @@
 
 .categories__list {
   margin: 0;
-  padding: 0 0 165px;
+  padding: 0 0 150px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -24,8 +24,12 @@
   h3 {
     color: $yellow;
     padding-top: 138px;
-    font-size: 15px;
+//    font-size: 15px;
     margin: 0 0 5px;
+    
+    a {
+      color: inherit;
+    }
   }
 }
 

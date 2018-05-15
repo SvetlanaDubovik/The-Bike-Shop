@@ -1,0 +1,72 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+
+.controls {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.controls__left h4{
+  padding: 10px 0 0;
+}
+
+.contrlos__right {
+  align-self: center;
+  padding: 0;
+  display: flex;
+  padding: 5px;
+}
+
+.controls__price {
+  font-family: RobotoLight;
+  margin: 0;
+  padding: 5px 0 0;
+}
+
+.controls__buy {
+  font-size: 12px;
+  color: $white;
+  border-radius: 10px;
+  background-color: $gray;
+  border: 1px solid $gray;
+  padding: 15px 35px;
+  text-transform: uppercase;
+}
+
+.controls__buy_active {
+  background-color: $black;
+  border-color: $black;
+  cursor: pointer;
+  color: $yellow;
+}
+
+.controls__option {
+  margin: 0 10px;
+  position: relative;
+  border: 1px solid $black;
+  border-radius: 10px;
+  padding: 15px 70px 10px 10px; 
+  text-transform: uppercase;
+  
+  /*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  
+  background-image: url(../../dist/img/select-arrow.png);
+background-position: right center;
+background-repeat: no-repeat;
+  
+}
+
+select::-ms-expand {
+  display: none;
+}

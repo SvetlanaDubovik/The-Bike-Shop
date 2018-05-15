@@ -90,6 +90,7 @@
   font-style: normal; }
 
 html, body {
+  position: relative;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -97,14 +98,14 @@ html, body {
   text-transform: uppercase;
   font-family: RobotoBold, Arial, sans-serif;
   color: #000;
-  background-color: dimgray; }
+  font-size: 15px;
+  overflow-x: hidden; }
 
 ul {
   list-style: none; }
 
 a {
-  text-decoration: none;
-  font-size: 15px; }
+  text-decoration: none; }
 
 h2 {
   font-size: 28px;
@@ -116,6 +117,10 @@ h2 {
 h3 {
   text-transform: uppercase;
   text-align: center; }
+
+h4 {
+  margin: 0;
+  padding: 0; }
 
 @font-face {
   font-family: 'RobotoBold';
@@ -292,6 +297,9 @@ h3 {
 
 .nav-menu__item_bascket:hover > a {
   background-color: transparent; }
+
+.nav-menu_footer a {
+  color: #000; }
 
 @font-face {
   font-family: 'RobotoBold';
@@ -690,7 +698,7 @@ h3 {
 
 .categories__list {
   margin: 0;
-  padding: 0 0 165px;
+  padding: 0 0 150px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -700,8 +708,9 @@ h3 {
   .categories__list h3 {
     color: #fcff19;
     padding-top: 138px;
-    font-size: 15px;
     margin: 0 0 5px; }
+    .categories__list h3 a {
+      color: inherit; }
 
 @font-face {
   font-family: 'RobotoBold';
@@ -775,11 +784,14 @@ h3 {
 .categories-item_2 {
   position: relative;
   background: url(../_/dist/img/categories-photo2.jpg); }
+  .categories-item_2 h3 a {
+    position: relative;
+    z-index: 3; }
 
 .categories-item_2::after {
   content: '';
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -798,6 +810,8 @@ h3 {
   margin: 0; }
 
 .categories-item_to-store {
+  position: relative;
+  z-index: 3;
   color: #fff;
   text-align: center;
   border: 1px solid #fff;
@@ -807,3 +821,523 @@ h3 {
   margin: 28px auto;
   display: block;
   font-size: 12px; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+.popular-bikes {
+  width: 100%;
+  padding-bottom: 10px; }
+  .popular-bikes h2 {
+    padding-bottom: 35px; }
+
+.popular-bikes__list {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -70px;
+  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+.popular-bikes-item {
+  display: block;
+  margin: 15px; }
+  .popular-bikes-item img {
+    width: 100%; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+.controls {
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.controls__left h4 {
+  padding: 10px 0 0; }
+
+.contrlos__right {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px; }
+
+.controls__price {
+  font-family: RobotoLight;
+  margin: 0;
+  padding: 5px 0 0; }
+
+.controls__buy {
+  font-size: 12px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #d2cece;
+  border: 1px solid #d2cece;
+  padding: 15px 35px;
+  text-transform: uppercase; }
+
+.controls__buy_active {
+  background-color: #000;
+  border-color: #000;
+  cursor: pointer;
+  color: #fcff19; }
+
+.controls__option {
+  margin: 0 10px;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px 70px 10px 10px;
+  text-transform: uppercase;
+  /*for WebKit*/
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+  background-image: url(../_/dist/img/select-arrow.png);
+  background-position: right center;
+  background-repeat: no-repeat; }
+
+select::-ms-expand {
+  display: none; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+.contact-us {
+  width: 100%;
+  background: url(../_/dist/img/contact-form-background.jpg);
+  background-size: contain;
+  padding-bottom: 70px; }
+  .contact-us h2 {
+    padding-bottom: 35px; }
+
+.contact-us__slogan {
+  text-transform: none;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.contact-us__form {
+  width: 450px;
+  margin: 0 auto; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+.form input, textarea {
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%; }
+  .form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: RobotoItalic;
+    padding: 10px 15px; }
+  .form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: RobotoItalic;
+    padding: 10px 15px; }
+  .form input::placeholder, textarea::placeholder {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: RobotoItalic;
+    padding: 10px 15px; }
+
+.form input[type='submit'] {
+  background-color: #d2cece;
+  color: #fff;
+  font-size: 12px; }
+
+.form__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 0;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.form__row_2col input {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal; }
+
+.footer {
+  background-color: #fcff19;
+  padding: 0 330px;
+  height: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.footer__logo {
+  position: relative; }
+  .footer__logo img {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    z-index: 10;
+    width: 129px;
+    height: 45px; }
+
+.footer__menu {
+  padding: 26px 0 0 120px; }

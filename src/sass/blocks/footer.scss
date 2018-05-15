@@ -1,0 +1,30 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+
+.footer {
+  background-color: $yellow;
+  padding: 0 330px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  position: relative;
+//  margin-left: 12px;
+  
+  img {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    z-index: 10;
+    width: 129px;
+    height: 45px;
+  }
+  
+}
+
+.footer__menu {
+  padding: 26px 0 0 120px;
+}

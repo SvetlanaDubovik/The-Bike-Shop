@@ -1,0 +1,15 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+@import "../global/fonts"; 
+
+.popular-bikes-item {
+  display: block;
+//  width: 346px;
+//  height: 288px;
+  margin: 15px;
+  
+  img {
+    width: 100%;
+//    height: 100%;
+  }
+}
