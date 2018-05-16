@@ -105,7 +105,8 @@ ul {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 h2 {
   font-size: 28px;
@@ -453,11 +454,11 @@ h4 {
 
 .slider__background {
   max-height: 100%;
-  max-width: 100%; }
+  width: 100%; }
 
 .slider__background_philter {
   max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -692,7 +693,8 @@ h4 {
 .categories {
   width: 100%;
   margin-top: -5px;
-  background: url(../_/dist/img/categories-background.jpg); }
+  background: url(../_/dist/img/categories-background.jpg) no-repeat;
+  background-size: cover; }
   .categories h2 {
     padding-bottom: 55px; }
 
@@ -891,7 +893,7 @@ h4 {
 .popular-bikes__list {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -70px;
+  margin: 0;
   padding: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1147,8 +1149,8 @@ select::-ms-expand {
 
 .contact-us {
   width: 100%;
-  background: url(../_/dist/img/contact-form-background.jpg);
-  background-size: contain;
+  background: url(../_/dist/img/contact-form-background.jpg) no-repeat;
+  background-size: cover;
   padding-bottom: 70px; }
   .contact-us h2 {
     padding-bottom: 35px; }
@@ -1230,22 +1232,26 @@ select::-ms-expand {
     text-transform: uppercase;
     font-size: 12px;
     font-family: RobotoItalic;
-    padding: 10px 15px; }
+    padding: 10px 0px; }
   .form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     text-transform: uppercase;
     font-size: 12px;
     font-family: RobotoItalic;
-    padding: 10px 15px; }
+    padding: 10px 0px; }
   .form input::placeholder, textarea::placeholder {
     text-transform: uppercase;
     font-size: 12px;
     font-family: RobotoItalic;
-    padding: 10px 15px; }
+    padding: 10px 0px; }
 
-.form input[type='submit'] {
+.form__submit {
   background-color: #d2cece;
   color: #fff;
   font-size: 12px; }
+
+.form__submit_active {
+  background-color: #000;
+  color: #fcff19; }
 
 .form__row {
   display: -ms-flexbox;
@@ -1322,7 +1328,7 @@ select::-ms-expand {
 
 .footer {
   background-color: #fcff19;
-  padding: 0 330px;
+  padding: 0 17%;
   height: 80px;
   display: -ms-flexbox;
   display: flex;
