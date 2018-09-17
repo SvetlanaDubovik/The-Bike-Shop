@@ -17,6 +17,7 @@
 
 .categories__list {
   margin: 0;
+  margin-left: -10px;
   padding: 0 0 150px;
   display: flex;
   justify-content: center;
@@ -25,8 +26,9 @@
   h3 {
     color: $yellow;
     padding-top: 138px;
-//    font-size: 15px;
-    margin: 0 0 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 2px 0 6px;
     
     a {
       color: inherit;

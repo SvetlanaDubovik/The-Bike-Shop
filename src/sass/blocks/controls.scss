@@ -1,23 +1,23 @@
-@import "../_variables"; 
-@import "../_mixins"; 
-@import "../global/fonts"; 
+@import "../_variables";
+@import "../_mixins";
+@import "../global/fonts";
 
 .controls {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
-.controls__left h4{
+.controls__left h4 {
   padding: 10px 0 0;
 }
 
 .contrlos__right {
-  align-self: center;
-  padding: 0;
+  // align-self: center;
+  padding: 7px 0 0;
   display: flex;
-  padding: 5px;
+  // padding: 5px;
 }
 
 .controls__price {
@@ -36,7 +36,7 @@
   text-transform: uppercase;
 }
 
-.controls__buy_active {
+.controls__buy:hover {
   background-color: $black;
   border-color: $black;
   cursor: pointer;
@@ -44,29 +44,30 @@
 }
 
 .controls__option {
-  margin: 0 10px;
+  margin: 0 8px 0 9px;
   position: relative;
-  border: 1px solid $black;
-  border-radius: 10px;
-  padding: 15px 70px 10px 10px; 
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 13px 0 10px 10px;
   text-transform: uppercase;
-  
-  /*for WebKit*/
- -webkit-appearance: none;
- /* for FF */
+  -webkit-appearance: none;
   -moz-appearance: none;
-  text-indent: 0.01px; 
+  text-indent: 8px;
   text-overflow: '';
-  /* for IE */
   -ms-appearance: none;
-  appearance: none!important;
-  
+  appearance: none !important;
   background-image: url(../../dist/img/select-arrow.png);
-background-position: right center;
-background-repeat: no-repeat;
-  
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  font-size: 13px;
+  width: 144px;
+  letter-spacing: -1px;
 }
 
 select::-ms-expand {
   display: none;
+}
+
+select option {
+  padding-left: 10px;
 }

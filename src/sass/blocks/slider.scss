@@ -40,18 +40,20 @@
 
 .slider__arrow_left {
   left: 26px;
+  background: url("../../dist/img/arrow-left.png") no-repeat;
 } 
-/*нужно еще для левой  стрелки неактивное состояние и для правой активное*/
 
-/*разобраться с урлом*/
-
-.slider__arrow_leftActive {
+.slider__arrow_left:hover {
   background: url("../../dist/img/arrow-left-active.png") no-repeat;
 }
 
 .slider__arrow_right {
   right: 26px;
   background: url("../../dist/img/arrow-right.png") no-repeat;
+}
+
+.slider__arrow_right:hover {
+  background: url("../../dist/img/arrow-right-active.png") no-repeat;
 }
 
 .slider__scroll {
@@ -109,6 +111,3 @@
 .slider-nav__item_active {
   border-bottom: 3px solid $yellow;
 }
-
-
-

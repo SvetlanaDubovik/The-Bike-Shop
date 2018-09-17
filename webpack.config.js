@@ -2,7 +2,7 @@ var webpack = require('webpack');
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+// const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //module settings 
@@ -107,9 +107,9 @@ module.exports = function (env){
 //            {from: './media', to: 'media'}
           ]
         ),
-        new ImageminPlugin({
-          test: /\.(png|jpe?g|gif|svg)$/
-        })
+        // new ImageminPlugin({
+        //   test: /\.(png|jpe?g|gif|svg)$/
+        // })
         ] :  [
         new ExtractTextPlugin(
           './css/[name].css'

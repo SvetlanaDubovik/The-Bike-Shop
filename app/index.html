@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>The Bike Shop</title>
-  <link rel="stylesheet" href="../dist/css/main.css">
   <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="../dist/css/main.css">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1" >
 </head>
 <body>
   <header class="header">
     <div class="header-logo">
-      <img src="../dist/img/header-logo.png" alt="The Bikes Shop" height="57" width="166">
+      <a href="/">
+        <img src="../dist/img/header-logo.png" alt="The Bikes Shop" height="57" width="166">
+      </a>
     </div>
-    <div class="nav-menu_header">
+    <nav class="nav-menu_header">
       <ul class="nav-menu__list">
         <li class="nav-menu__item nav-menu__item_sub">
           <a href="#">Bicycles</a>
@@ -41,10 +44,92 @@
           <a href="#"><img src="../dist/img/bascket.png" alt="bascket-img" width="26" height="26"></a>
         </li>
       </ul>
-    </div>
+    </nav>
   </header> 
   <section class="slider">
-    <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
+    <!-- <ul class="slider-list">
+      <li class="slider-list__item" id="item1"> -->
+          <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
+          <img class="slider__background_philter" src="../dist/img/slider-philter.png" alt="Handmade bicycle" width="1920" height="980">
+          <header class="slider-header">
+            <h1>Handmade bicycle</h1>
+            <p class="slider-header__slogan">
+              <span class="slider-header__slogan_gray">You </span>
+              <span class="slider-header__slogan_yellow">create </span>
+              <span class="slider-header__slogan_gray">the </span>
+              <span class="slider-header__slogan_yellow">journey, </span>
+              <span class="slider-header__slogan_gray">we supply the </span>
+              <span class="slider-header__slogan_yellow">parts.</span>
+            </p>
+            <a href="#" class="slider-header__btn">Shop bikes</a>
+          </header>  
+      <!-- </li>
+      <li class="slider-list__item" id="item2">
+          <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
+          <img class="slider__background_philter" src="../dist/img/slider-philter.png" alt="Handmade bicycle" width="1920" height="980">
+          <header class="slider-header">
+            <h1>Handmade bicycle#2</h1>
+            <p class="slider-header__slogan">
+              <span class="slider-header__slogan_gray">You </span>
+              <span class="slider-header__slogan_yellow">create </span>
+              <span class="slider-header__slogan_gray">the </span>
+              <span class="slider-header__slogan_yellow">journey, </span>
+              <span class="slider-header__slogan_gray">we supply the </span>
+              <span class="slider-header__slogan_yellow">parts.</span>
+            </p>
+            <a href="#" class="slider-header__btn">Shop bikes</a>
+          </header>  
+      </li>
+      <li class="slider-list__item" id="item3">
+          <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
+          <img class="slider__background_philter" src="../dist/img/slider-philter.png" alt="Handmade bicycle" width="1920" height="980">
+          <header class="slider-header">
+            <h1>Handmade bicycle#3</h1>
+            <p class="slider-header__slogan">
+              <span class="slider-header__slogan_gray">You </span>
+              <span class="slider-header__slogan_yellow">create </span>
+              <span class="slider-header__slogan_gray">the </span>
+              <span class="slider-header__slogan_yellow">journey, </span>
+              <span class="slider-header__slogan_gray">we supply the </span>
+              <span class="slider-header__slogan_yellow">parts.</span>
+            </p>
+            <a href="#" class="slider-header__btn">Shop bikes</a>
+          </header>  
+      </li>
+      <li class="slider-list__item" id="item4">
+          <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
+          <img class="slider__background_philter" src="../dist/img/slider-philter.png" alt="Handmade bicycle" width="1920" height="980">
+          <header class="slider-header">
+            <h1>Handmade bicycle#4</h1>
+            <p class="slider-header__slogan">
+              <span class="slider-header__slogan_gray">You </span>
+              <span class="slider-header__slogan_yellow">create </span>
+              <span class="slider-header__slogan_gray">the </span>
+              <span class="slider-header__slogan_yellow">journey, </span>
+              <span class="slider-header__slogan_gray">we supply the </span>
+              <span class="slider-header__slogan_yellow">parts.</span>
+            </p>
+            <a href="#" class="slider-header__btn">Shop bikes</a>
+          </header>  
+      </li>
+      <li class="slider-list__item" id="item5">
+          <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
+          <img class="slider__background_philter" src="../dist/img/slider-philter.png" alt="Handmade bicycle" width="1920" height="980">
+          <header class="slider-header">
+            <h1>Handmade bicycle#5</h1>
+            <p class="slider-header__slogan">
+              <span class="slider-header__slogan_gray">You </span>
+              <span class="slider-header__slogan_yellow">create </span>
+              <span class="slider-header__slogan_gray">the </span>
+              <span class="slider-header__slogan_yellow">journey, </span>
+              <span class="slider-header__slogan_gray">we supply the </span>
+              <span class="slider-header__slogan_yellow">parts.</span>
+            </p>
+            <a href="#" class="slider-header__btn">Shop bikes</a>
+          </header>  
+      </li>
+    </ul> -->
+    <!-- <img class="slider__background" src="../dist/img/slider-photo1.jpg" alt="Handmade bicycle" width="1920" height="980">
     <img class="slider__background_philter" src="../dist/img/slider-philter.png" alt="Handmade bicycle" width="1920" height="980">
     <header class="slider-header">
       <h1>Handmade bicycle</h1>
@@ -57,11 +142,10 @@
         <span class="slider-header__slogan_yellow">parts.</span>
       </p>
       <a href="#" class="slider-header__btn">Shop bikes</a>
-    </header>   
-    <button class="slider__arrow slider__arrow_left slider__arrow_leftActive "></button>
-    <button class="slider__arrow slider__arrow_right">
-    </button>
-    <a href="#" class="slider__scroll"></a>
+    </header>    -->
+    <button class="slider__arrow slider__arrow_left"></button>
+    <button class="slider__arrow slider__arrow_right"></button>
+    <a href="#categories" class="slider__scroll"></a>
     <ul class="slider-nav">
       <li class="slider-nav__item"><button></button></li>
       <li class="slider-nav__item slider-nav__item_active"><button></button></li>
@@ -70,7 +154,7 @@
       <li class="slider-nav__item"><button></button></li>
     </ul>
   </section>
-  <section class="categories">
+  <section class="categories" id="categories">
     <h2>Categories</h2>
     <ul class="categories__list">
       <li class="categories-item categories-item_1">
@@ -119,7 +203,7 @@
               <option value="option">option</option>
               <option value="option">option</option>
             </select>
-            <button class="controls__buy controls__buy_active">Buy</button>
+            <button class="controls__buy">Buy</button>
           </div>
         </div>
       </li>
@@ -162,7 +246,9 @@
   </section>
   <footer class="footer">
     <div class="footer__logo">
-      <img src="../dist/img/footer-logo.png" alt="The Bikes Shop" height="45" width="129">
+      <a href="/">
+        <img src="../dist/img/footer-logo.png" alt="The Bikes Shop" height="45" width="129">
+      </a>
     </div>
     <div class="footer__menu nav-menu_footer">
       <ul class="nav-menu__list">
@@ -181,6 +267,6 @@
       </ul>
     </div>
   </footer>  
-<!--  <script src="../dist/js/main.js"></script>-->
+ <script src="../dist/js/main.js"></script>
 </body>
 </html>
