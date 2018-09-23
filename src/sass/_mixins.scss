@@ -1,13 +1,20 @@
-@import "./_variables"; 
-@import "./global/fonts"; 
+@import "./_variables";
 
-
-@mixin btn($sidePadding: 30px, $backgroundClr: $black, $textClr: $yellow) {
-  background-color: $backgroundClr;
-  color: $textClr;
+@mixin btn($backgroundColor: transparent, $textColor: $white, $border: none) {
+  background-color: $backgroundColor;
+  color: $textColor;
   border-radius: 10px;
   text-align: center;
-  padding: 15px $sidePadding;
   font-size: 12px;
-  font-family: RobotoThin;
+  border: $border;
+  cursor: pointer;
+}
+
+@mixin absoluteLeftPositioning($width, $height, $left: 0, $top: 0, $z-index: 0) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  left: $left;
+  top: $top;
+  z-index: $z-index;
 }

@@ -1,15 +1,14 @@
-//@import "../../";
+@import '~normalize.css/normalize';
 @import "../sass/global/fonts";
-@import "../sass/global/grid";
 @import "../sass/global/base";
 
 @import "../sass/blocks/header";
 @import "../sass/blocks/nav-menu";
 @import "../sass/blocks/sub-menu";
 @import "../sass/blocks/slider";
-@import "../sass/blocks/slider-list";
-@import "../sass/blocks/slider";
-@import "../sass/blocks/slider-header";
+@import "../sass/blocks/slider-item";
+@import "../sass/blocks/slider-item-header";
+@import "../sass/blocks/slider-nav";
 @import "../sass/blocks/categories";
 @import "../sass/blocks/categories-item";
 @import "../sass/blocks/popular-bikes";

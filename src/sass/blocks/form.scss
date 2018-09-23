@@ -1,20 +1,28 @@
-@import "../_variables"; 
-@import "../_mixins"; 
-@import "../global/fonts"; 
+@import "../_variables";
 
-.form input, textarea {
+.form input,
+textarea {
   border-radius: 10px;
+  border: 1px solid $gray;
   padding: 10px 15px;
   width: 100%;
-  
+
   &::placeholder {
     text-transform: uppercase;
     font-size: 12px;
-    font-family: RobotoItalic;
+    font-family: $RobotoItalic;
     padding: 10px 0px;
   }
-  
 }
+
+textarea {
+  resize: none;
+  
+  &::placeholder {
+    padding: 5px 0;
+  }
+}
+
 
 .form__submit {
   background-color: $gray;
@@ -37,4 +45,3 @@
 .form__row_2col input {
   flex-basis: 40%;
 }
-

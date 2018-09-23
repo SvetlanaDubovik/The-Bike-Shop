@@ -1,28 +1,21 @@
-@import "../_variables"; 
-@import "../_mixins"; 
-@import "../global/fonts"; 
-@import "../global/grid"; 
+@import "../_variables";
+@import "../_mixins";
 
-.sub-menu{
+.sub-menu {
   display: none;
-  position: absolute;
-  top: 45px;
-  left: 10px;
-  width: 195px;
+  @include absoluteLeftPositioning(195px, auto, 10px, 45px, auto);
   margin: 0;
   padding: 0 15px 10px;
   border-radius: 10px;
   background-color: $yellow;
   border-top-left-radius: 0;
-  
+
   li {
     padding-top: 15px;
   }
-  
+
   a {
     color: $black;
     font-size: 15px;
   }
-  
 }
-

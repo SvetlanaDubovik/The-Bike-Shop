@@ -1,14 +1,12 @@
-var webpack = require('webpack');
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-// const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //module settings 
 module.exports = function (env){
     
-  var production = env === 'production';
+  let production = env === 'production';
     
     return {
       //basic path to project
@@ -22,7 +20,7 @@ module.exports = function (env){
         ],
       },
         
-//      devtool: 'source-map',
+      devtool: 'source-map',
 
       output: {
         filename: production ? 'js/[name].min.js' : 'js/[name].js',
@@ -33,16 +31,16 @@ module.exports = function (env){
       module: {
         rules: [
           //babel 
-//          {
-//            test: /\.js$/,
-//            exclude: /(node_modules|bower_components)/,
-//            use: {
-//              loader: 'babel-loader',
-//              options: {
-//                presets: ['env']
-//              }
-//            }
-//          },
+          {
+            test: /\.js$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['env']
+              }
+            }
+          },
           //scss
           {
             test: /\.scss$/,
@@ -70,7 +68,7 @@ module.exports = function (env){
 
           // img
           {
-            test: /\.(png|gif|jpe?g)$/,
+            test: /\.(png|gif|jpe?g|ico)$/,
             loaders: [
               {
                 loader: 'file-loader',
@@ -81,7 +79,7 @@ module.exports = function (env){
               'img-loader',
             ]
           },
-//          // Fonts
+         // Fonts
           {
             test: /\.(woff|woff2|eot|ttf|otf)$/,
             use: [
@@ -104,21 +102,15 @@ module.exports = function (env){
         new CopyWebpackPlugin(
           [
             {from: './img', to: 'img'},
-//            {from: './media', to: 'media'}
           ]
-        ),
-        // new ImageminPlugin({
-        //   test: /\.(png|jpe?g|gif|svg)$/
-        // })
-        ] :  [
+        )] :  [
         new ExtractTextPlugin(
-          './css/[name].css'
+          './css/main.css'
         ),    
         new CleanWebpackPlugin(['dist']),    
         new CopyWebpackPlugin(
           [
             {from: './img', to: 'img'},
-//            {from: './media', to: 'media'}
           ]
         )
       ]

@@ -1,0 +1,35 @@
+@import "../_mixins";
+
+.slider-item {
+    display: none;
+}
+
+.slider-item_show {
+    display: block;
+}
+
+.slider-item__background {
+    max-height: 100%;
+    width: 100%;
+}
+
+.slider-item__background_philter {
+    @include absoluteLeftPositioning(100%, 100%, 0, 0, 0);
+    max-height: 100%;
+}
+
+.slider-item_active {
+    display: block;
+    animation: fade 1s ease;
+    opacity: 1;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

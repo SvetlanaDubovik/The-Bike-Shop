@@ -1,0 +1,36 @@
+@import "../_variables"; 
+@import "../_mixins"; 
+
+.slider-item-header {
+  @include absoluteLeftPositioning(540px, auto, 50%, 380px, 10);  
+  margin-left: -270px;
+  text-align: center;
+  padding-top: 15px;
+  
+  h1 {
+    color: $white;
+    font-size: 50px;
+    margin: 0 0 15px;
+  }
+}
+
+.slider-item-header__slogan {
+  font-size: 28px;
+  font-family: $RobotoThin;
+  text-transform: none;
+  margin: 0 0 45px;
+}
+
+.slider-item-header__slogan_gray {
+  color: $gray;
+}
+
+.slider-item-header__slogan_yellow {
+  color: $yellow;
+}
+
+.slider-item-header__btn {
+  @include btn($black, $yellow);
+  font-family: $RobotoThin;
+  padding: 15px 30px;  
+}

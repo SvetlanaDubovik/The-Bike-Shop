@@ -1,0 +1,28 @@
+@import "../_variables";
+@import "../_mixins";
+
+.slider-nav {
+  @include absoluteLeftPositioning(100%, auto, 0, auto, 10000);
+  padding: 0;
+  display: flex;
+  bottom: 0;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  height: 5px;
+}
+
+.slider-nav__item {
+  display: inline-block;
+  flex-basis: 20%;
+  border-bottom: 1px solid $gray;
+  background-color: transparent;
+  height: 5px;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.slider-nav__item_active {
+  border-bottom: 4px solid $yellow;
+}

@@ -1,11 +1,7 @@
-@import "../_variables"; 
-@import "../_mixins"; 
-@import "../global/fonts"; 
-
 .popular-bikes {
   width: 100%;
   padding-bottom: 10px;
-  
+
   h2 {
     padding-bottom: 35px;
   }
@@ -17,12 +13,10 @@
   padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 @media only screen and (max-width: 1560px) {
   .popular-bikes__list {
     justify-content: center;
-
   }
 }

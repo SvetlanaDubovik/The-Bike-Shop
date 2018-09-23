@@ -1,11 +1,6 @@
-@import "../_variables"; 
-@import "../_mixins"; 
-@import "../global/fonts"; 
-
 .contact-us {
   width: 100%;
-//  max-height: 100%;
-  background: url(../../dist/img/contact-form-background.jpg) no-repeat;
+  background: url("../img/contact-form-background.jpg") no-repeat;
   background-size: cover;
   padding-bottom: 70px;
   

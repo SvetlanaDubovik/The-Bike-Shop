@@ -1,6 +1,5 @@
 @import "../_variables"; 
 @import "../_mixins"; 
-@import "../global/fonts"; 
 
 .footer {
   background-color: $yellow;
@@ -12,17 +11,10 @@
 
 .footer__logo {
   position: relative;
-//  margin-left: 12px;
   
   img {
-    position: absolute;
-    top: 15px;
-    left: 70px;
-    z-index: 10;
-    width: 129px;
-    height: 45px;
-  }
-  
+    @include absoluteLeftPositioning(129px, 45px, 70px, 15px, 1);
+  }  
 }
 
 .footer__menu {

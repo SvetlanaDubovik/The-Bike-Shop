@@ -1,18 +1,14 @@
 @import "../_variables"; 
-@import "../_mixins"; 
-@import "../global/fonts"; 
 
 .categories {
   width: 100%;
-//  height: 300px;
   margin-top: -5px;
-  background: url(../../dist/img/categories-background.jpg) no-repeat;
+  background: url("../img/categories-background.jpg") no-repeat;
   background-size: cover;
   
   h2 {
     padding-bottom: 55px;
-  }
-  
+  }  
 }
 
 .categories__list {
@@ -35,6 +31,3 @@
     }
   }
 }
-
-
-
